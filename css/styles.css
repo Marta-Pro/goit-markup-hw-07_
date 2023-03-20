@@ -226,7 +226,7 @@ body {
   background-position: center;
   background-color: #f4f4fd;
 }
-.desc-item {
+.descitem {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -650,9 +650,6 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.about-footer {
-  margin-right: 40px;
-}
 
 /*.foot-logo {
   text-align: left;
@@ -800,7 +797,7 @@ img {
 }
 .modal {
   width: 408px;
-  height: 584px;
+
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -948,6 +945,11 @@ textarea::placeholder {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   align-self: center;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1026,6 +1028,13 @@ textarea::placeholder {
     width: 100%;
     padding: 0;
   }
+  .main-nav {
+    max-width: 768px;
+  }
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
   .relations {
     font-weight: 400;
     font-size: 12px;
@@ -1048,12 +1057,15 @@ textarea::placeholder {
   }
 
   .list.desc {
-    width: 100%;
+    max-width: 768px;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
     align-items: center;
     justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
   }
   .desc-item {
     flex-basis: 45%;
@@ -1065,7 +1077,7 @@ textarea::placeholder {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    text-align: center;
+    text-align: left;
   }
   .section-team {
     padding-top: 96px;
@@ -1073,8 +1085,6 @@ textarea::placeholder {
   }
 
   .main-cont {
-    padding-left: 108px;
-    padding-right: 108px;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
@@ -1093,28 +1103,33 @@ textarea::placeholder {
   .cont-text {
     width: 264px;
   }
+  .team-container {
+    max-width: 582px;
+  }
+
   .section-customers {
     padding-top: 96px;
   }
   .customer-list {
+    max-width: 582px;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
     align-items: center;
     justify-content: center;
-    padding-left: 108px;
-    padding-right: 108px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .customer-item {
     flex-basis: 30%;
   }
   .container-footer {
-    width: 768px;
+    max-width: 582px;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
     justify-content: flex-start;
-    padding-left: 108px;
+
     align-self: flex-start;
   }
   .about-footer {
@@ -1271,7 +1286,7 @@ textarea::placeholder {
   }
   .footer-input {
     margin: 0;
-    width: 95%;
+    max-width: 398px;
     align-self: center;
     margin-bottom: 16px;
   }
@@ -1369,9 +1384,7 @@ textarea::placeholder {
     width: 320px;
     top: 488px;
   }
-  .form-btn {
-    height: 40px;
-  }
+
   .actions-mob-menu {
     justify-content: space-between;
     gap: 0;
